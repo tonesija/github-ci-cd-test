@@ -11,6 +11,3 @@ class TestMainRouter:
         res = client.get("/")
 
         assert res.status_code == 200
-
-    def another_test(self):
-        assert 3 == 1 + 2
