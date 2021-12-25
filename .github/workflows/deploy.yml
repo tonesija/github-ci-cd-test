@@ -28,4 +28,4 @@ jobs:
         with:
           heroku_api_key: ${{ secrets.HEROKU_API_KEY }}
           heroku_app_name: "github-ci-cd-test"
-          heroku_email: "te51681@fer.hr"
+          heroku_email: ${{ secrets.HEROKU_EMAIL }}
