@@ -7,7 +7,7 @@ class TestMainRouter:
 
         assert res.status_code == 200
 
-    def test_get_fail(self, client):
+    def test_get_fail_notanymore(self, client):
         res = client.get("/")
 
-        assert res.status_code == 404
+        assert res.status_code == 200
