@@ -11,3 +11,11 @@ class TestMainRouter:
         res = client.get("/")
 
         assert res.status_code == 200
+
+    def test_posts(self, client):
+        res = client.get("/posts")
+
+        res_json = res.json()
+
+        assert res.status_code == 200
+        assert len(res_json) == 2
